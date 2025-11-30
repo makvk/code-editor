@@ -1,5 +1,4 @@
 from PyQt6.QtWidgets import QFileDialog
-import os
 
 class FileManager:
     # Конструктор с инициализацией двух полей

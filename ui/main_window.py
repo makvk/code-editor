@@ -4,6 +4,7 @@ from core.file_manager import FileManager
 
 
 class MainWindow(QMainWindow):
+    # Конструктор главного окна, с установкой необходимых параметров
     def __init__(self):
         super().__init__()
 
@@ -18,6 +19,7 @@ class MainWindow(QMainWindow):
         self._create_menu()
         self._create_status_bar()
 
+    # Создание виджета меню
     def _create_menu(self):
         menu = self.menuBar()
 
@@ -34,6 +36,7 @@ class MainWindow(QMainWindow):
         save_action.triggered.connect(self.file_manager.save_file)
         save_as_action.triggered.connect(self.file_manager.save_file_as)
 
+    # Создание строки статуса
     def _create_status_bar(self):
         status = QStatusBar()
         self.setStatusBar(status)

@@ -1,9 +1,10 @@
-from PyQt6.QtWidgets import QFileDialog
+from PyQt6.QtWidgets import QFileDialog, QStatusBar
 
 class FileManager:
     # Конструктор с инициализацией двух полей
     def __init__(self, editor):
         self.editor = editor
+        self.status = QStatusBar()
         self.current_path = None
 
     # Логика открытия файла

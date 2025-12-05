@@ -8,8 +8,7 @@ class EditorWidget(QPlainTextEdit):
 
         # Настройки редактора
         self.setLineWrapMode(QPlainTextEdit.LineWrapMode.NoWrap)
-        self.setFont(QFont('Courier New', 12))
+        self.setFont(QFont('Courier New', 14))
         self.setTabStopDistance(4 * self.fontMetrics().horizontalAdvance(' '))
         # Подсветка синтаксиса
         self.highlighter = PythonHighlighter(self.document())
-    
